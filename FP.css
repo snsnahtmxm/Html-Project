@@ -27,6 +27,12 @@ footer {
   text-align: center;
   color: #ffffff;
 }
+.brbr {
+  display: none;
+}
+.brbrbr {
+  display: none;
+}
 .modalFirst {
   position: relative;
 }
@@ -52,7 +58,7 @@ footer {
   width: 350px;
   z-index: 2;
   position: absolute;
-  top: 30%;
+  top: 38%;
 }
 .title,
 .oneHourText {
@@ -64,10 +70,10 @@ footer {
   color: #f5df4d;
   font-size: 36px;
   font-weight: 700;
-  margin-top: 78px;
+  margin-top: 46px;
 }
 .oneHourText {
-  margin-top: 102px;
+  margin-top: 76px;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -95,12 +101,18 @@ footer {
   font-size: 24px;
   text-align: center;
 }
+.answerInput{
+  margin-top: 102px;
+}
 .answerInput input {
   border: none;
   color: black;
   width: 228px;
   height: 57px;
   border-radius: 7px;
+}
+.answerInput input:nth-child(2){
+  margin-top: 27px;
 }
 .howLong {
   margin-top: 115px;
@@ -156,16 +168,14 @@ footer {
   background-color: #fcee21;
   margin-right: 20px;
 }
-.weniv {
-  letter-spacing: 10px;
-  font-size: 22px;
+.weniv img {
+  width: 125px;
+  object-fit: cover;
 }
 .wenivR {
   font-size: 12px;
+  margin-top: 20px;
 }
-
-    
-
 
 /* 모달 CSS */
 .modalTwo {
@@ -210,85 +220,143 @@ footer {
   cursor: pointer;
 }
 
-/* @media only screen and (max-width: 762px) {
-    .brbr{
-        display: block;
-    }
-    .brbrbr{
-        display: block
-    }
+@media only screen and (max-width: 764px) {
+  .brbr {
+    display: block;
+  }
+  .brbrbr {
+    display: block;
+  }
   .main {
     background-color: rgb(82, 122, 78);
   }
   .one {
     object-fit: cover;
     width: 267px;
+    top: 27%;
   }
   .clock {
     object-fit: contain;
     width: 125px;
   }
   .title {
+    margin-top: 31px;
     font-size: 22px;
+  }
+  .oneHourText {
+    position: relative;
+    white-space: nowrap;
+    margin-top: 62px;
   }
   .oneHourText span {
     font-weight: bold;
     font-size: 14px;
   }
+  .oneHourText div:nth-child(1) {
+    position: absolute;
+    margin-top: -8px;
+    margin-right: 330px;
+  }
+  .oneHourText div:nth-child(3) {
+    position: absolute;
+    margin-top: -8px;
+    margin-left: 330px;
+  }
   .answerInput {
+    margin-top: 62px;
     font-size: 14px;
   }
-  .answerInput input {
-    width: 156px;
-    height: 37px;
-    top: 442px;
-    left: 56px;
-    gap: 0px;
-    border-radius: 7px;
+  .answerInput p:nth-child(1) {
+    margin-bottom: 17px;
   }
-  .answerInput input::placeholder {
-    font-size: 14px;
-    font-family: GmarketSansMedium;
-    font-weight: bold;
-  }
-.howLong{
-    width: Fixed (241px)px;
-height: Fixed (68px)px;
-
-
+  .answerInput input:nth-child(2) {
+    margin-top: 22px;
 }
-.howLong img{
-    margin-top: 20px;
-    width: 46px;
-    height: 48px;
-    object-fit: cover;
+.answerInput input {
+  width: 156px;
+  height: 37px;
+  top: 442px;
+  left: 56px;
+  gap: 0px;
+  border-radius: 7px;
 }
-.howLongTitle{
-
-    border-radius: 13px;
+.answerInput input::placeholder {
+  font-size: 14px;
+  font-family: GmarketSansMedium;
+  font-weight: bold;
 }
-.howLongTitle p{
-font-size: 14px;
-font-weight: bold;
-line-height: 14px;
-text-align: center;
-margin: -3px;
+.howLong {
+  margin-top: 49px;
+  width: Fixed (241px) px;
+  height: Fixed (68px) px;
 }
+.howLong img {
+  margin-top: 20px;
+  width: 46px;
+  height: 48px;
+  object-fit: cover;
 }
-.traingText{
-font-size: 14px;
+.howLongTitle {
+  padding-left: 30px;
+  padding-right: 24px;
+  margin-left: 23px;
+  border-radius: 13px;
+}
+.howLongTitle p {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+  margin-bottom: none;
+}
+.traingText {
+  margin-top: 64px;
+  font-size: 14px;
+}
+.traingText p:nth-child(2) {
+  margin-top: 15px;
+  height: 24px;
+}
+.traingText p:nth-child(1) {
+  height: 24px;
 }
 .traingText span {
-    font-size: 24px;
+  font-size: 24px;
 }
-.choiceBtn{
-    display: flex;
-    white-space: nowrap;
-    
+.choiceBtn {
+  margin-top: 85px;
 }
-.choiceBtn button {
-    font-size: 14px;
+.choiceBtn button:nth-child(1) {
+  font-family: GmarketSansMedium;
+  padding: 9px 0px 9px 3px;
+  width: 186px;
+  height: 40px;
+  font-size: 14px;
 }
+.choiceBtn button:nth-child(2) {
+  font-family: GmarketSansMedium;
+  padding: 9px 0px 9px 3px;
+  height: 40px;
+  width: 92px;
+  font-size: 14px;
+}
+.weniv{
+  margin-top: 83px;
+  margin-bottom: 0px;
+}
+.wenivR{
+  margin-top: 17px;
+  font-size: 9px;
+}
+  }
+  
+
+
+
+
+
+
+
 /* .choiceBtn span{
     width: 151px;
 }
@@ -302,5 +370,4 @@ font-size: 14px;
   font-weight: 700;
   line-height: 14px;
   text-align: center;
-  } */
-   
+  }*/
