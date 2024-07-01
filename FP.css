@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "OTEnjoystoriesBA";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html body {
+  margin: 0;
+  height: 100%;
+  font-family: GmarketSansMedium;
+}
+div {
+  box-sizing: border-box;
+}
+footer {
+  margin-top: 130px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+.modalFirst {
+  position: relative;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #5b2386;
+}
+.oneHour {
+  width: 100%;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.oneHour img {
+  display: block;
+}
+.clock {
+  z-index: 1;
+}
+.one {
+  width: 350px;
+  z-index: 2;
+  position: absolute;
+  top: 30%;
+}
+.title,
+.oneHourText {
+  width: 100%;
+  text-align: center;
+}
+.title {
+  font-family: OTEnjoystoriesBA;
+  color: #f5df4d;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 78px;
+}
+.oneHourText {
+  margin-top: 102px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+.oneHourText span {
+  font-weight: bold;
+  font-size: 24px;
+}
+.oneHourText div:nth-child(1),
+.oneHourText div:nth-child(3) {
+  font-weight: bold;
+  font-size: 70px;
+  padding: 55px 0px 0px 0px;
+  color: #fcee214d;
+}
+.oneHourText div:nth-child(1) {
+  margin-right: 50px;
+}
+.oneHourText div:nth-child(3) {
+  margin-left: 50px;
+}
+.answerInput,
+.answerInput input {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+}
+.answerInput input {
+  border: none;
+  color: black;
+  width: 228px;
+  height: 57px;
+  border-radius: 7px;
+}
+.howLong {
+  margin-top: 115px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+}
+.howLongTitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  background-color: #fcee21;
+  color: #5b2386;
+  padding: 0px 40px 0px 46px;
+  border-radius: 56px;
+  margin-bottom: -8px;
+}
+.howLong img {
+  width: 64px;
+  height: 72px;
+}
+.traingText {
+  margin-top: 147px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+.traingText span {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: left;
+}
+.choiceBtn {
+  margin-top: 127px;
+  text-align: center;
+}
+.choiceBtn button:nth-child(1),
+.choiceBtn button:nth-child(2) {
+  cursor: pointer;
+  font-weight: 700;
+  color: #5b2386;
+  font-size: 24px;
+  border: none;
+  padding: 21px 49px 21px 49px;
+  border-radius: 56px;
+}
+.choiceBtn button:nth-child(1) {
+  background-color: #fcee21;
+  margin-right: 20px;
+}
+.weniv {
+  letter-spacing: 10px;
+  font-size: 22px;
+}
+.wenivR {
+  font-size: 12px;
+}
+
+    
+
+
+/* 모달 CSS */
+.modalTwo {
+  z-index: 99999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+}
+.modalTwo p:nth-child(1) {
+  font-family: OTEnjoystoriesBA;
+  font-size: 96px;
+  font-weight: 700;
+  color: #5b2386;
+}
+.modalTwo p:nth-child(2) {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 39.6px;
+  color: #5b2386;
+  text-align: center;
+}
+
+.madalMain button {
+  margin: 74px auto;
+  font-size: 24px;
+  text-align: center;
+  background-color: #fcee21;
+  color: #5b2386;
+  font-weight: 700;
+  padding: 21px 49px 21px 49px;
+  border-radius: 56px;
+  border: none;
+  display: block;
+  box-shadow: 0px 0px 10px 0px #00000080;
+  cursor: pointer;
+}
+
+/* @media only screen and (max-width: 762px) {
+    .brbr{
+        display: block;
+    }
+    .brbrbr{
+        display: block
+    }
+  .main {
+    background-color: rgb(82, 122, 78);
+  }
+  .one {
+    object-fit: cover;
+    width: 267px;
+  }
+  .clock {
+    object-fit: contain;
+    width: 125px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .oneHourText span {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .answerInput {
+    font-size: 14px;
+  }
+  .answerInput input {
+    width: 156px;
+    height: 37px;
+    top: 442px;
+    left: 56px;
+    gap: 0px;
+    border-radius: 7px;
+  }
+  .answerInput input::placeholder {
+    font-size: 14px;
+    font-family: GmarketSansMedium;
+    font-weight: bold;
+  }
+.howLong{
+    width: Fixed (241px)px;
+height: Fixed (68px)px;
+
+
+}
+.howLong img{
+    margin-top: 20px;
+    width: 46px;
+    height: 48px;
+    object-fit: cover;
+}
+.howLongTitle{
+
+    border-radius: 13px;
+}
+.howLongTitle p{
+font-size: 14px;
+font-weight: bold;
+line-height: 14px;
+text-align: center;
+margin: -3px;
+}
+}
+.traingText{
+font-size: 14px;
+}
+.traingText span {
+    font-size: 24px;
+}
+.choiceBtn{
+    display: flex;
+    white-space: nowrap;
+    
+}
+.choiceBtn button {
+    font-size: 14px;
+}
+/* .choiceBtn span{
+    width: 151px;
+}
+.choiceBtn button:nth-child(1),
+.choiceBtn button:nth-child(2) {
+  cursor: pointer;
+;
+  padding: 22px 49px 21px 49px;
+  border-radius: 56px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  } */
+   
